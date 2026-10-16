@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Ambiente virtual ---
+.venv/
+venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+.jupyter/
+
+# --- Dados grandes e artefatos de modelos ---
+dados/
+data/
+*.csv.gz
+*.parquet
+*.npy
+*.npz
+*.pkl
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.h5
+*.zip
+*.tar.gz
+
+# Cache de modelos do Hugging Face / sentence-transformers, se baixado dentro do repo
+.cache/
+models/
+
+# --- Sistema e editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
