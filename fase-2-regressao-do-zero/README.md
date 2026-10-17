@@ -1,13 +1,12 @@
-# Fase 2 — Derivadas e sistemas
+# Fase 2 — Regressão do zero (21/dez a 17/jan)
 
-Entender a derivada como ferramenta de otimização e resolver sistemas lineares, chegando ao primeiro classificador treinado do zero.
-
-**Projeto ao final:** Marco 2 — Regressão logística (ver [`marcos/`](../marcos/)).
-
-| Semana | Tópicos |
+| Semana | Pasta |
 |---|---|
-| [06](semana-06/semana-06.ipynb) | Limites e derivada como taxa de variação; derivada numérica por diferenças finitas |
-| [07](semana-07/semana-07.ipynb) | Regras de derivação e regra da cadeia; derivadas de exp, log e sigmoide |
-| [08](semana-08/semana-08.ipynb) | Máximos e mínimos; gradiente descendente em uma variável |
-| [09](semana-09/semana-09.ipynb) | Sistemas lineares: eliminação de Gauss, posto, inversa, np.linalg.solve |
-| [10](semana-10/semana-10.ipynb) | Mínimos quadrados e equações normais; entropia cruzada (projeto do Marco 2) |
+| Semana de 21/dez · Posto, núcleo e regra da cadeia | [`2026-12-21-posto-nucleo-regra-da-cadeia/`](2026-12-21-posto-nucleo-regra-da-cadeia/) |
+| Semana de 28/dez · Pausa | Sem conteúdo novo. Refaça os exercícios em que você errou no semestre. |
+| Semana de 4/jan · Projeção e mínimos quadrados | [`2027-01-04-projecao-minimos-quadrados/`](2027-01-04-projecao-minimos-quadrados/) |
+| Semana de 11/jan · Marco 2: regressão logística | [`2027-01-11-regressao-logistica/`](2027-01-11-regressao-logistica/) |
+
+## Marco
+
+**Marco 2 · até 17/jan — Regressão logística do zero.** Classificador de sentimento com bag-of-words e gradiente descendente em NumPy. Critério: derivar o gradiente à mão e chegar a uma acurácia próxima à do scikit-learn no mesmo conjunto. ([`marcos/marco-2-regressao-logistica/`](../marcos/marco-2-regressao-logistica/))

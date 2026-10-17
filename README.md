@@ -1,61 +1,83 @@
 # Cálculo e Álgebra Linear para ML/NLP
 
-Plano de estudos de 20 semanas, com um notebook por semana em NumPy e 4 projetos-marco.
-
 ## Objetivo
 
-Construir a base de cálculo e álgebra linear necessária para entender e implementar do zero modelos de Machine Learning e NLP, terminando no mecanismo de atenção do Transformer. A teoria é feita à mão, no papel, e cada conceito é implementado em NumPy logo em seguida.
+O foco é dominar Álgebra Linear e Cálculo; ML entra só como uma aplicação curta de cada tópico, feita depois dos exercícios. Até 18/dez o conteúdo segue as disciplinas; nas férias (21/dez a 7/mar) entra o que as ementas não cobrem: cálculo de várias variáveis, SVD e a matemática da atenção.
+
+Cada tópico tem quatro partes, nesta ordem: **conteúdo** (o que dominar, tirado do programa da disciplina), **exercícios** (à mão, da lista ou do livro-texto), **conferência no código** (um notebook curto em NumPy que confere o que você fez à mão) e **aplicação em ML/IA** (um problema real de ML resolvido com aquele tópico, com objetivo, passos e o que observar). Nenhuma das duas partes em código substitui os exercícios.
+
+Cada pasta de tópico ou semana tem um `README.md` com essas quatro partes e dois notebooks: `conferencia.ipynb` e `aplicacao-ml.ipynb`. O `calc-1` tem três conferências (A, B e C) e a semana de 1/mar tem duas aplicações (A e B), como no plano.
+
+## Semestre (19/out a 18/dez)
+
+Cada semana do semestre tem um modo. **Só disciplinas:** nada do plano. **Prática leve:** um notebook de 1 a 2 h sobre o tópico da aula naquela semana.
+
+| Semana | Provas e eventos | Modo |
+|---|---|---|
+| 19/out | Véspera da prova de Álgebra Linear | Só disciplinas; instalar o ambiente |
+| 26/out | Álgebra Linear (26/out, a confirmar); AI Brasil Experience em SP (27 a 30/out) | Pausa |
+| 2/nov | Cálculo 1A, 3ª avaliação (4/nov) | Só disciplinas |
+| 9/nov | — | Prática leve |
+| 16/nov | — | Prática leve |
+| 23/nov | Arquitetura, 3ª avaliação (24/nov) | Só disciplinas |
+| 30/nov | Álgebra Linear (2/dez), Matemática Discreta (3/dez), Cálculo 1A, 4ª avaliação (4/dez) | Só disciplinas |
+| 7/dez | — | Prática leve; Marco 1 |
+| 14/dez | Fim do semestre (18/dez) | Prática leve; Marco 1 |
 
 ## As 4 fases
 
-| Fase | Semanas | Foco |
+| Fase | Período | Pasta |
 |---|---|---|
-| [1. Vetores e funções](fase-1-vetores-e-funcoes/) | 01–05 | vetores, produto escalar, cosseno, matrizes, sigmoide e softmax |
-| [2. Derivadas e sistemas](fase-2-derivadas-e-sistemas/) | 06–10 | derivada, regra da cadeia, gradiente descendente, sistemas lineares, mínimos quadrados |
-| [3. Gradientes e SVD](fase-3-gradientes-e-svd/) | 11–16 | gradiente, jacobiana, backpropagation, autovetores, SVD, PCA |
-| [4. Transformer](fase-4-transformer/) | 17–20 | softmax estável, atenção, multi-head, bloco Transformer |
+| 1 — No ritmo das aulas | 19/out a 18/dez | [`fase-1-no-ritmo-das-aulas/`](fase-1-no-ritmo-das-aulas/) |
+| 2 — Regressão do zero | 21/dez a 17/jan (pausa de 28/dez a 3/jan) | [`fase-2-regressao-do-zero/`](fase-2-regressao-do-zero/) |
+| 3 — Gradientes e decomposições | 18/jan a 14/fev | [`fase-3-gradientes-e-svd/`](fase-3-gradientes-e-svd/) |
+| 4 — A matemática do Transformer | 15/fev a 7/mar | [`fase-4-transformer/`](fase-4-transformer/) |
 
 ## Os 4 marcos
 
-| Marco | Quando | Projeto |
+Um marco só conta como feito quando o código roda e você explica a matemática dele sem consultar nada.
+
+| Marco | Prazo | Pasta |
 |---|---|---|
-| [1. Busca semântica](marcos/marco-1-busca-semantica/) | semana 5 | embeddings com sentence-transformers + ranking por similaridade de cosseno |
-| [2. Regressão logística](marcos/marco-2-regressao-logistica/) | semana 10 | classificador de texto do zero em NumPy, comparado com o scikit-learn |
-| [3. MLP e PCA](marcos/marco-3-mlp-e-pca/) | semana 16 | MLP com backprop manual + PCA via SVD para visualizar embeddings |
-| [4. Atenção multi-head](marcos/marco-4-atencao-multi-head/) | semana 20 | atenção multi-head em NumPy, conferida contra o PyTorch |
+| Marco 1 — Busca semântica | 18/dez | [`marcos/marco-1-busca-semantica/`](marcos/marco-1-busca-semantica/) |
+| Marco 2 — Regressão logística do zero | 17/jan | [`marcos/marco-2-regressao-logistica/`](marcos/marco-2-regressao-logistica/) |
+| Marco 3 — MLP e PCA | 14/fev | [`marcos/marco-3-mlp-e-pca/`](marcos/marco-3-mlp-e-pca/) |
+| Marco 4 — Atenção multi-head | 7/mar | [`marcos/marco-4-atencao-multi-head/`](marcos/marco-4-atencao-multi-head/) |
 
 ## Estrutura
 
 ```
 calculo-algebra-ml/
-├── fase-1-vetores-e-funcoes/      semana-01 a semana-05
-├── fase-2-derivadas-e-sistemas/   semana-06 a semana-10
-├── fase-3-gradientes-e-svd/       semana-11 a semana-16
-├── fase-4-transformer/            semana-17 a semana-20
+├── fase-1-no-ritmo-das-aulas/     por tópico: al-1, al-2, al-3, calc-1, calc-2
+├── fase-2-regressao-do-zero/      por semana: 21/dez, 4/jan, 11/jan
+├── fase-3-gradientes-e-svd/       por semana: 18/jan, 25/jan, 1/fev, 8/fev
+├── fase-4-transformer/            por semana: 15/fev, 22/fev, 1/mar
 ├── marcos/                        os 4 projetos-marco
-├── exercicios-a-mao/              fotos ou PDFs das listas resolvidas
+├── exercicios-a-mao/              fotos ou PDFs das listas, espelhando as fases
 └── notas/                         resumos em Markdown, fórmulas em LaTeX
 ```
 
 ## Como rodar o ambiente
 
-Requer Python 3.12. No Windows (PowerShell), a partir da pasta do repositório:
+No PowerShell, a partir da pasta do repositório:
 
 ```powershell
-# 1. criar e ativar o ambiente virtual
-py -3.12 -m venv .venv
+cd ~\estudos\calculo-algebra-ml
 .\.venv\Scripts\Activate.ps1
-
-# 2. instalar as dependências (o requirements.txt já aponta para o índice do torch só CPU)
-python -m pip install -r requirements.txt
-
-# 3. registrar o kernel do Jupyter
-python -m ipykernel install --user --name calculo-algebra-ml --display-name "calculo-algebra-ml"
-
-# 4. abrir o JupyterLab
 jupyter lab
 ```
 
-No Linux ou macOS, troque o passo 1 por `python3.12 -m venv .venv` e `source .venv/bin/activate`.
+Os notebooks já usam o kernel `calculo-algebra-ml`.
 
-Os notebooks já vêm configurados para usar o kernel `calculo-algebra-ml`.
+### Recriar o ambiente do zero
+
+Requer Python 3.12.
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m ipykernel install --user --name calculo-algebra-ml --display-name "calculo-algebra-ml"
+```
+
+O `requirements.txt` já aponta para o índice do PyTorch só CPU.

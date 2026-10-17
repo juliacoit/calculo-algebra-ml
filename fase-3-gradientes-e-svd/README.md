@@ -1,14 +1,14 @@
-# Fase 3 — Gradientes e SVD
+# Fase 3 — Gradientes e decomposições (18/jan a 14/fev)
 
-Generalizar a derivada para várias variáveis (backpropagation) e decompor matrizes para reduzir dimensão.
+Esta fase vai além das duas ementas. Os conteúdos de Cálculo vêm de Cálculo 2 (várias variáveis), e a SVD vem depois do que Álgebra Linear cobre.
 
-**Projeto ao final:** Marco 3 — MLP e PCA (ver [`marcos/`](../marcos/)).
-
-| Semana | Tópicos |
+| Semana | Pasta |
 |---|---|
-| [11](semana-11/semana-11.ipynb) | Derivadas parciais e vetor gradiente; curvas de nível |
-| [12](semana-12/semana-12.ipynb) | Jacobiana e regra da cadeia multivariada; gradiente descendente em lote, mini-batch e SGD |
-| [13](semana-13/semana-13.ipynb) | Backpropagation como regra da cadeia em grafos computacionais; MLP do zero |
-| [14](semana-14/semana-14.ipynb) | Autovalores e autovetores; matrizes simétricas e matriz de covariância |
-| [15](semana-15/semana-15.ipynb) | Decomposição em valores singulares (SVD); aproximação de posto baixo; LSA |
-| [16](semana-16/semana-16.ipynb) | PCA via SVD; visualização de embeddings em 2D (projeto do Marco 3) |
+| Semana de 18/jan · Teorema espectral e derivadas parciais | [`2027-01-18-teorema-espectral-derivadas-parciais/`](2027-01-18-teorema-espectral-derivadas-parciais/) |
+| Semana de 25/jan · Gradiente, regra da cadeia em várias variáveis e Jacobiano | [`2027-01-25-gradiente-jacobiano/`](2027-01-25-gradiente-jacobiano/) |
+| Semana de 1/fev · SVD e backpropagation | [`2027-02-01-svd-backpropagation/`](2027-02-01-svd-backpropagation/) |
+| Semana de 8/fev · Marco 3 | [`2027-02-08-posto-baixo-gradient-check/`](2027-02-08-posto-baixo-gradient-check/) |
+
+## Marco
+
+**Marco 3 · até 14/fev — MLP e PCA.** MLP de 2 camadas com backprop conferido por diferenças finitas (erro relativo abaixo de 1e-5). Depois, PCA via SVD de embeddings de palavras, plotado em 2D. Critério: dizer o que cada autovetor representa no gráfico. ([`marcos/marco-3-mlp-e-pca/`](../marcos/marco-3-mlp-e-pca/))
