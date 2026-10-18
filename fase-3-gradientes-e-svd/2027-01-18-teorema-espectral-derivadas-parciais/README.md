@@ -1,6 +1,8 @@
 # Semana de 18/jan · Teorema espectral e derivadas parciais
 
-[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-3-gradientes-e-svd/2027-01-18-teorema-espectral-derivadas-parciais/)
+**Fonte:** Gilbert Strang, MIT 18.06 (autovalores); 3Blue1Brown, *Essence of Linear Algebra*; Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -27,4 +29,6 @@ diagonalizar 2 matrizes simétricas 2×2 por base ortonormal; derivadas parciais
 3. A matriz de segundas derivadas (a Hessiana) dessa perda é 2·AᵀA/n, com A = [x, 1]. Calcule-a, confirme que é simétrica e ache seus autovalores.
 4. Padronize x (média 0, desvio 1), refaça as curvas e os autovalores e compare a razão entre o maior e o menor.
 
-**O que observar:** sem padronizar, as elipses ficam muito alongadas (razão grande entre autovalores). Padronizar as deixa quase circulares; é por isso que quase todo pipeline de ML padroniza as features.
+## O que observar
+
+sem padronizar, as elipses ficam muito alongadas (razão grande entre autovalores). Padronizar as deixa quase circulares; é por isso que quase todo pipeline de ML padroniza as features.

@@ -1,6 +1,8 @@
 # Semana de 1/mar · Marco 4 e posto baixo
 
-[Fase 4 — A matemática do Transformer](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml-a-multi-head.ipynb`](aplicacao-ml-a-multi-head.ipynb) · [`aplicacao-ml-b-lora.ipynb`](aplicacao-ml-b-lora.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-4-transformer/2027-03-01-multi-head-lora/)
+**Fonte:** Vaswani et al., *Attention Is All You Need* (seção 3.2); Jay Alammar, *The Illustrated Transformer*; Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 4 — A matemática do Transformer](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml-a-multi-head.ipynb`](aplicacao-ml-a-multi-head.ipynb) · [`aplicacao-ml-b-lora.ipynb`](aplicacao-ml-b-lora.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -27,4 +29,12 @@ O plano não tem conferência no código nesta semana.
 2. Pegue uma matriz de pesos de atenção do GPT-2, calcule a SVD e plote os valores singulares em ordem.
 3. Aproxime a matriz com posto 8, 32 e 128 pela SVD truncada e meça o erro relativo de cada uma.
 
-**O que observar:** os valores singulares caem rápido, então pouca informação mora nas direções finais. O LoRA aposta que o ajuste fino precisa de uma mudança de posto baixo nos pesos, não de uma matriz inteira nova.
+## O que observar
+
+os valores singulares caem rápido, então pouca informação mora nas direções finais. O LoRA aposta que o ajuste fino precisa de uma mudança de posto baixo nos pesos, não de uma matriz inteira nova.
+
+## Marco 4
+
+**Marco 4 · até 7/mar — Atenção multi-head.** Implementação em NumPy com máscara causal, com saída conferida contra PyTorch. Critério: anotar o formato (shape) de cada matriz em cada linha do código.
+
+Um marco só conta como feito quando o código roda e você explica a matemática dele sem consultar nada.

@@ -1,6 +1,8 @@
 # Semana de 25/jan · Gradiente, regra da cadeia em várias variáveis e Jacobiano
 
-[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-3-gradientes-e-svd/2027-01-25-gradiente-jacobiano/)
+**Fonte:** Karpathy, *Neural Networks: Zero to Hero* (micrograd); Parr e Howard, *The Matrix Calculus You Need for Deep Learning*; Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -26,4 +28,6 @@ gradiente e derivada direcional de 3 funções; Jacobiano de uma transformação
 2. Implemente o momentum, v ← β·v + ∇L e (w, b) ← (w, b) − η·v, com β = 0,9. Compare a trajetória com a da versão simples sobre as curvas de nível.
 3. Para uma camada y = Wx, mostre no papel que o Jacobiano de y em relação a x é a própria W. Confira com `torch.autograd.functional.jacobian`.
 
-**O que observar:** o número de passos acompanha a razão entre os autovalores. O momentum reduz o zigue-zague ao acumular a direção que se repete.
+## O que observar
+
+o número de passos acompanha a razão entre os autovalores. O momentum reduz o zigue-zague ao acumular a direção que se repete.

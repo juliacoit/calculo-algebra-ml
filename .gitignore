@@ -1,3 +1,25 @@
+# --- Artefatos de modelos e formatos de dados pesados (fora de dados/) ---
+*.csv.gz
+*.parquet
+*.npy
+*.npz
+*.pkl
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.h5
+*.zip
+*.tar.gz
+.cache/
+models/
+
+# --- dados/ é versionada; só os arquivos com mais de 10 MB ficam de fora ---
+!dados/**
+# A lista abaixo é gerada por dados/atualizar_gitignore.py. Não edite à mão.
+# >>> dados grandes (gerado)
+# <<< dados grandes (gerado)
+
 # --- Python ---
 __pycache__/
 *.py[cod]
@@ -14,26 +36,6 @@ env/
 # --- Jupyter ---
 .ipynb_checkpoints/
 .jupyter/
-
-# --- Dados grandes e artefatos de modelos ---
-dados/
-data/
-*.csv.gz
-*.parquet
-*.npy
-*.npz
-*.pkl
-*.pt
-*.pth
-*.bin
-*.safetensors
-*.h5
-*.zip
-*.tar.gz
-
-# Cache de modelos do Hugging Face / sentence-transformers, se baixado dentro do repo
-.cache/
-models/
 
 # --- Sistema e editor ---
 .DS_Store

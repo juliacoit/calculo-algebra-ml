@@ -1,6 +1,8 @@
 # Semana de 8/fev · Marco 3
 
-[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-3-gradientes-e-svd/2027-02-08-posto-baixo-gradient-check/)
+**Fonte:** Gilbert Strang, MIT 18.06 (SVD); Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -22,4 +24,12 @@ O plano não tem conferência no código nesta semana.
 2. Comprima uma imagem em tons de cinza com SVD de posto 5, 20 e 50 e meça o erro de cada uma.
 3. Aplique PCA via SVD a embeddings de cerca de 100 palavras e plote em 2D.
 
-**O que observar:** o gradient check é o teste padrão para provar que um backprop escrito à mão está certo. Na imagem, poucos valores singulares já guardam a maior parte da informação.
+## O que observar
+
+o gradient check é o teste padrão para provar que um backprop escrito à mão está certo. Na imagem, poucos valores singulares já guardam a maior parte da informação.
+
+## Marco 3
+
+**Marco 3 · até 14/fev — MLP e PCA.** MLP de 2 camadas com backprop conferido por diferenças finitas (erro relativo abaixo de 1e-5). Depois, PCA via SVD de embeddings de palavras, plotado em 2D. Critério: dizer o que cada autovetor representa no gráfico.
+
+Um marco só conta como feito quando o código roda e você explica a matemática dele sem consultar nada.

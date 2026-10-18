@@ -1,6 +1,8 @@
 # Semana de 22/fev · Q, K, V e a escala por √d
 
-[Fase 4 — A matemática do Transformer](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-4-transformer/2027-02-22-qkv-escala-raiz-d/)
+**Fonte:** Jay Alammar, *The Illustrated Transformer*; 3Blue1Brown, série *Neural Networks* (Transformers); Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 4 — A matemática do Transformer](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -29,4 +31,6 @@ escrever o formato de cada matriz para X de 5×8 e W de 8×4; calcular à mão a
 4. Plote a matriz como mapa de calor, com os tokens nos eixos, e anote para qual token anterior cada palavra mais olha.
 5. Compare 3 ou 4 cabeças diferentes da mesma camada.
 
-**O que observar:** a matriz do modelo real tem exatamente a forma e as propriedades da sua. Cada cabeça aprende um padrão diferente de produtos internos.
+## O que observar
+
+a matriz do modelo real tem exatamente a forma e as propriedades da sua. Cada cabeça aprende um padrão diferente de produtos internos.

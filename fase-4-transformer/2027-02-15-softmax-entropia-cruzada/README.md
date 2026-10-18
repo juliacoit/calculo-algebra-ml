@@ -1,6 +1,8 @@
 # Semana de 15/fev · Softmax, Jacobiano e entropia cruzada
 
-[Fase 4 — A matemática do Transformer](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-4-transformer/2027-02-15-softmax-entropia-cruzada/)
+**Fonte:** Karpathy, *Neural Networks: Zero to Hero* (makemore); Parr e Howard, *The Matrix Calculus You Need for Deep Learning*; Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 4 — A matemática do Transformer](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -34,4 +36,6 @@ derivar à mão o Jacobiano da softmax para 3 classes; derivar ∂L/∂z e simpl
 4. Atualize W pelo gradiente, usando ∂L/∂z = s − y, até a perda média parar de cair.
 5. Gere 10 nomes novos sorteando uma letra de cada vez a partir de s.
 
-**O que observar:** não há nenhuma derivada além da que você fez à mão. O modelo aprende quais letras costumam vir depois de quais.
+## O que observar
+
+não há nenhuma derivada além da que você fez à mão. O modelo aprende quais letras costumam vir depois de quais.

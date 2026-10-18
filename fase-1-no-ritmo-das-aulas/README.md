@@ -1,29 +1,32 @@
 # Fase 1 — No ritmo das aulas (19/out a 18/dez)
 
-Cada semana do semestre tem um modo. **Só disciplinas:** nada do plano. **Prática leve:** um notebook de 1 a 2 h sobre o tópico da aula naquela semana.
+A Fase 1 cobre Álgebra Linear de transformações lineares em diante (o que vem depois de mudança de base, onde param as notas de aula) e Cálculo de funções até integração, seguindo os capítulos 3 a 11 do Ávila. Conteúdo e exercícios são o estudo normal para as provas; a conferência leva de 30 a 45 min por tópico; as aplicações em ML/IA ficam para as semanas sem prova.
 
-| Semana | Provas e eventos | Modo |
-|---|---|---|
-| 19/out | Véspera da prova de Álgebra Linear | Só disciplinas; instalar o ambiente |
-| 26/out | Álgebra Linear (26/out, a confirmar); AI Brasil Experience em SP (27 a 30/out) | Pausa |
-| 2/nov | Cálculo 1A, 3ª avaliação (4/nov) | Só disciplinas |
-| 9/nov | — | Prática leve |
-| 16/nov | — | Prática leve |
-| 23/nov | Arquitetura, 3ª avaliação (24/nov) | Só disciplinas |
-| 30/nov | Álgebra Linear (2/dez), Matemática Discreta (3/dez), Cálculo 1A, 4ª avaliação (4/dez) | Só disciplinas |
-| 7/dez | — | Prática leve; Marco 1 |
-| 14/dez | Fim do semestre (18/dez) | Prática leve; Marco 1 |
+[Calendário do semestre](calendario-semestre.md)
 
-Os tópicos abaixo são os que ainda faltam nos dois programas. Faça cada um quando a aula chegar nele; se o professor mudar a ordem, siga a aula.
+## Álgebra Linear
 
-| Tópico | Pasta |
-|---|---|
-| Álgebra Linear · Transformações lineares e suas matrizes | [`al-1-transformacoes-lineares/`](al-1-transformacoes-lineares/) |
-| Álgebra Linear · Autovalores, autovetores e diagonalização | [`al-2-autovalores-diagonalizacao/`](al-2-autovalores-diagonalizacao/) |
-| Álgebra Linear · Produto interno, Gram-Schmidt e complemento ortogonal | [`al-3-produto-interno-gram-schmidt/`](al-3-produto-interno-gram-schmidt/) |
-| Cálculo · Aplicações da derivada | [`calc-1-aplicacoes-da-derivada/`](calc-1-aplicacoes-da-derivada/) |
-| Cálculo · Integração e aplicações da integral | [`calc-2-integracao/`](calc-2-integracao/) |
+- [AL1 · Transformações lineares: definição, núcleo e imagem](algebra-linear/al1-transformacoes-nucleo-imagem/)
+- [AL2 · Matriz de uma transformação, composição e mudança de base](algebra-linear/al2-matriz-composicao-mudanca-de-base/)
+- [AL3 · Autovalores e autovetores](algebra-linear/al3-autovalores-autovetores/)
+- [AL4 · Diagonalização](algebra-linear/al4-diagonalizacao/)
+- [AL5 · Produto interno, norma e ângulo](algebra-linear/al5-produto-interno-norma-angulo/)
+- [AL6 · Gram-Schmidt, complemento ortogonal e projeção (Marco 1)](algebra-linear/al6-gram-schmidt-projecao/)
 
-## Marco
+## Cálculo
 
-**Marco 1 · até 18/dez — Busca semântica.** Gere embeddings de uns 50 textos públicos sobre herpetofauna e devolva os 3 mais próximos de uma pergunta, com o ranking feito por um único produto de matrizes. Critério: explicar por que, com vetores normalizados, o cosseno vira só produto escalar. ([`marcos/marco-1-busca-semantica/`](../marcos/marco-1-busca-semantica/))
+- [C0 · Funções e gráficos (Ávila cap. 3; revisão)](calculo/c0-funcoes-graficos/)
+- [C1 · Limites e continuidade (Ávila 4.2; revisão)](calculo/c1-limites-continuidade/)
+- [C2 · Derivada: definição e reta tangente (Ávila 4.1 e 4.3; revisão)](calculo/c2-derivada-definicao/)
+- [C3 · Regras de derivação, cadeia, implícita e inversa (Ávila cap. 5; revisão)](calculo/c3-regras-de-derivacao/)
+- [C4 · Funções trigonométricas, identidades e limite fundamental (Ávila 6.1 e 6.2)](calculo/c4-trigonometria-identidades/)
+- [C5 · Derivadas trigonométricas, inversas e formas indeterminadas (Ávila 6.3 a 6.5)](calculo/c5-derivadas-trigonometricas-inversas/)
+- [C6 · Logaritmo e exponencial (Ávila cap. 7)](calculo/c6-logaritmo-exponencial/)
+- [C7 · Máximos e mínimos e Teorema do Valor Médio (Ávila cap. 8)](calculo/c7-maximos-minimos-tvm/)
+- [C8 · L'Hôpital, concavidade, esboço de gráficos e Taylor (Ávila cap. 9)](calculo/c8-lhopital-concavidade-taylor/)
+- [C9 · Integral definida, Teorema Fundamental do Cálculo e impróprias (Ávila cap. 10)](calculo/c9-integral-tfc-improprias/)
+- [C10 · Técnicas de integração e aplicações da integral (Ávila cap. 11)](calculo/c10-tecnicas-de-integracao/)
+
+## Marco 1
+
+**Marco 1 · até 18/dez — Busca semântica.** Gere embeddings de uns 50 textos públicos sobre herpetofauna e devolva os 3 mais próximos de uma pergunta, com o ranking feito por um único produto de matrizes. Critério: explicar por que, com vetores normalizados, o cosseno vira só produto escalar. ([AL6 · Gram-Schmidt, complemento ortogonal e projeção (Marco 1)](algebra-linear/al6-gram-schmidt-projecao/))

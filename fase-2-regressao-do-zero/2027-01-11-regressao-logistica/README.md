@@ -1,6 +1,8 @@
 # Semana de 11/jan · Marco 2: regressão logística
 
-[Fase 2 — Regressão do zero](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-2-regressao-do-zero/2027-01-11-regressao-logistica/)
+**Fonte:** 3Blue1Brown, *Essence of Calculus*; Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 2 — Regressão do zero](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -25,4 +27,12 @@ O plano não tem conferência no código nesta semana.
 
 5. Liste as 10 palavras com maior peso positivo e as 10 com maior peso negativo e confira se fazem sentido.
 
-**O que observar:** o gradiente (p − y)·x tem a mesma forma do gradiente da regressão linear, (ŷ − y)·x. Só a função de saída mudou.
+## O que observar
+
+o gradiente (p − y)·x tem a mesma forma do gradiente da regressão linear, (ŷ − y)·x. Só a função de saída mudou.
+
+## Marco 2
+
+**Marco 2 · até 17/jan — Regressão logística do zero.** Classificador de sentimento com bag-of-words e gradiente descendente em NumPy. Critério: derivar o gradiente à mão e chegar a uma acurácia próxima à do scikit-learn no mesmo conjunto.
+
+Um marco só conta como feito quando o código roda e você explica a matemática dele sem consultar nada.

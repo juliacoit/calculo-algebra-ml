@@ -1,6 +1,8 @@
 # Semana de 1/fev · SVD e backpropagation
 
-[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-3-gradientes-e-svd/2027-02-01-svd-backpropagation/)
+**Fonte:** Gilbert Strang, MIT 18.06 (SVD); 3Blue1Brown, série *Neural Networks* (backprop); Karpathy, *Neural Networks: Zero to Hero* (micrograd); Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 3 — Gradientes e decomposições](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -27,4 +29,6 @@ SVD de uma matriz 2×2 à mão, via AᵀA; desenhar o grafo de operações de um
 3. Plote os documentos nas 2 primeiras direções, uma cor por tema (as cores servem só para conferir; o método não as usa).
 4. Para cada um dos 3 vetores singulares, liste as 10 palavras de maior peso e dê um nome ao tema.
 
-**O que observar:** a SVD agrupa palavras que aparecem juntas nos mesmos documentos. É a ideia por trás dos embeddings, antes das redes neurais.
+## O que observar
+
+a SVD agrupa palavras que aparecem juntas nos mesmos documentos. É a ideia por trás dos embeddings, antes das redes neurais.

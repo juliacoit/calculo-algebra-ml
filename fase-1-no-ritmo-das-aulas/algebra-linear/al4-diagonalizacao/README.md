@@ -1,34 +1,37 @@
-# Álgebra Linear · Autovalores, autovetores e diagonalização
+# AL4 · Diagonalização
 
-[Fase 1 — No ritmo das aulas](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-1-no-ritmo-das-aulas/al-2-autovalores-diagonalizacao/)
+**Fonte:** Callioli, diagonalização
+
+[Fase 1 — No ritmo das aulas](../../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
-Av = λv; polinômio característico det(A − λI) = 0; autoespaço; multiplicidade algébrica e geométrica; diagonalização A = PDP⁻¹ e quando ela é possível.
+A é diagonalizável se e só se tem n autovetores LI; A = PDP⁻¹ com os autovetores nas colunas de P e os autovalores em D; critérios (n autovalores distintos bastam; em geral, multiplicidade geométrica = algébrica para todo autovalor); potências Aⁿ = PDⁿP⁻¹; matrizes simétricas reais são sempre diagonalizáveis com P ortogonal (só o enunciado; a prova volta na Fase 3).
 
 ## Exercícios
 
-autovalores e autovetores de matrizes 2×2 e 3×3; decidir se uma matriz é diagonalizável; calcular Aⁿ por PDⁿP⁻¹.
+decidir se 4 matrizes são diagonalizáveis; achar P e D; calcular A¹⁰ por PD¹⁰P⁻¹.
 
 ## Conferência no código
 
-**Conferência no código — a direção em que os dados mais variam:**
+**Conferência no código — Fibonacci por diagonalização:**
 
-1. Gere 200 pontos alongados: `X = np.random.randn(200, 2) @ np.array([[3, 0], [1, 0.5]])`.
-2. Subtraia a média de cada coluna e calcule a matriz de covariância `C = X.T @ X / 199`.
-3. Resolva det(C − λI) = 0 à mão (é uma equação do 2º grau) e ache os autovetores. Confira com `np.linalg.eigh(C)`.
-4. Plote os pontos e os dois autovetores saindo da origem: o de maior autovalor aponta para onde a nuvem é mais comprida.
-5. Verifique numericamente C = PDPᵀ. Aqui Pᵀ = P⁻¹ porque C é simétrica (isso volta na Fase 3).
+1. Escreva a recorrência como (Fₙ₊₁, Fₙ) = A·(Fₙ, Fₙ₋₁), com A = [[1, 1], [1, 0]].
+2. Diagonalize A à mão: os autovalores são (1 ± √5)/2.
+3. Calcule F₃₀ por PD³⁰P⁻¹ e compare com um laço simples (F₃₀ = 832 040).
+4. Tente diagonalizar [[1, 1], [0, 1]]: `np.linalg.eig` devolve dois autovetores praticamente iguais, e P fica quase singular. Confirme à mão que ela não é diagonalizável.
 
 ## Aplicação em ML/IA
 
-**Aplicação em ML/IA — PCA em embeddings de frases.** Objetivo: reduzir vetores de 384 dimensões para 2 usando os autovetores da covariância, e ver se o significado sobrevive.
+**Aplicação em ML/IA — PCA em embeddings de frases.** Objetivo: diagonalizar a matriz de covariância para reduzir vetores de 384 dimensões a 2, e ver se o significado sobrevive.
 
-1. Escreva cerca de 40 frases curtas em português sobre 4 temas (por exemplo: répteis, anfíbios, culinária e futebol), 10 por tema.
-2. Gere os embeddings com `sentence-transformers` (modelo `paraphrase-multilingual-MiniLM-L12-v2`, que devolve vetores de 384 dimensões).
-3. Centralize e calcule a covariância 384×384, como na conferência.
-4. Pegue os 2 autovetores de maior autovalor com `np.linalg.eigh` e projete cada frase neles (produto da matriz de dados pelos 2 autovetores).
-5. Plote as frases em 2D, uma cor por tema.
+1. Aquecimento em 2D: gere 200 pontos alongados com `np.random.randn(200, 2) @ np.array([[3, 0], [1, 0.5]])`, centralize, calcule C = XᵀX/199 e diagonalize C = PDPᵀ. Plote os pontos e os autovetores: o de maior autovalor aponta para onde a nuvem é mais comprida.
+2. Escreva cerca de 40 frases curtas em português sobre 4 temas (por exemplo: répteis, anfíbios, culinária e futebol), 10 por tema.
+3. Gere os embeddings com `sentence-transformers` (modelo `paraphrase-multilingual-MiniLM-L12-v2`, vetores de 384 dimensões).
+4. Centralize, calcule a covariância 384×384 e pegue os 2 autovetores de maior autovalor com `np.linalg.eigh`.
+5. Projete cada frase nesses 2 autovetores e plote em 2D, uma cor por tema.
 6. Calcule a fração da variância explicada: (λ₁ + λ₂) / Σλ.
 
-**O que observar:** os temas tendem a formar grupos mesmo com 2 de 384 direções. Uma fração explicada baixa mostra que o significado está espalhado por muitas direções.
+## O que observar
+
+os temas tendem a formar grupos mesmo usando 2 de 384 direções. Pᵀ = P⁻¹ porque a covariância é simétrica. Uma fração explicada baixa mostra que o significado está espalhado por muitas direções.

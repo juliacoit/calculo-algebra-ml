@@ -1,14 +1,16 @@
-# Cálculo · Integração e aplicações da integral
+# C9 · Integral definida, Teorema Fundamental do Cálculo e impróprias (Ávila cap. 10)
 
-[Fase 1 — No ritmo das aulas](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-1-no-ritmo-das-aulas/calc-2-integracao/)
+**Fonte:** Ávila, cap. 10
+
+[Fase 1 — No ritmo das aulas](../../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
-primitivas e integral indefinida; integral definida e Teorema Fundamental do Cálculo; substituição, integração por partes, substituição trigonométrica e frações parciais; integrais impróprias; áreas entre curvas, volumes, comprimento de arco e valor médio.
+primitivas e integral indefinida; integral de Riemann e suas propriedades; Teorema Fundamental do Cálculo; integrais impróprias, com intervalo infinito e com integrando ilimitado.
 
 ## Exercícios
 
-a lista da disciplina, com prioridade para por partes, frações parciais e impróprias.
+Ávila 10.1 a 10.5, com prioridade para o TFC e as impróprias.
 
 ## Conferência no código
 
@@ -17,7 +19,7 @@ a lista da disciplina, com prioridade para por partes, frações parciais e impr
 1. Implemente a soma de Riemann pelo ponto médio para ∫₀¹ x² dx com n = 10, 100 e 1000 e compare com o valor exato 1/3.
 2. Calcule à mão a imprópria ∫₀^∞ e⁻ˣ dx e aproxime no código truncando em 5, 10 e 20.
 3. Verifique numericamente que a densidade normal (1/√(2π))·e^(−x²/2) integra perto de 1 em [−10, 10].
-4. Calcule o valor médio de sen x em [0, π] pela integral e compare com a média de 10 000 pontos sorteados no intervalo.
+4. Use o TFC: derive F(x) = ∫₀ˣ e^(−t²) dt numericamente (diferença central de C2) e confira que dá e^(−x²).
 
 ## Aplicação em ML/IA
 
@@ -29,4 +31,6 @@ a lista da disciplina, com prioridade para por partes, frações parciais e impr
 4. Classifique cada indivíduo pela espécie de maior densidade e ache o ponto de fronteira em que as duas densidades se cruzam.
 5. Calcule o erro esperado como a área das caudas que passam da fronteira (duas integrais) e compare com o erro medido nos dados.
 
-**O que observar:** a integral é o que liga um modelo de probabilidade ao número que importa, a chance de errar. Essa é a base de Probabilidade e Estatística A.
+## O que observar
+
+a integral liga um modelo de probabilidade ao número que importa, a chance de errar. É a base de Probabilidade e Estatística A.

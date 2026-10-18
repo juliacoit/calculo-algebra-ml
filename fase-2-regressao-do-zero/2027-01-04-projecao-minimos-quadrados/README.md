@@ -1,6 +1,8 @@
 # Semana de 4/jan · Projeção e mínimos quadrados
 
-[Fase 2 — Regressão do zero](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](../../exercicios-a-mao/fase-2-regressao-do-zero/2027-01-04-projecao-minimos-quadrados/)
+**Fonte:** Gilbert Strang, MIT 18.06 (projeções); 3Blue1Brown, *Essence of Linear Algebra*; 3Blue1Brown, *Essence of Calculus*; Deisenroth, Faisal e Ong, *Mathematics for Machine Learning* (cap. 2–5)
+
+[Fase 2 — Regressão do zero](../) · Notebooks: [`conferencia.ipynb`](conferencia.ipynb) · [`aplicacao-ml.ipynb`](aplicacao-ml.ipynb) · [Exercícios à mão](exercicios/)
 
 ## Conteúdo
 
@@ -27,6 +29,8 @@ reta de mínimos quadrados para 3 ou 4 pontos, à mão, pelos dois caminhos (equ
 2. Acrescente uma coluna de 1s e resolva as equações normais com `np.linalg.lstsq`.
 3. Compare os coeficientes com os de `LinearRegression` do scikit-learn: devem ser iguais.
 4. Calcule o erro quadrático médio no teste.
-5. Volte à matriz com a coluna redundante e resolva a versão regularizada (XᵀX + λI)w = Xᵀy para λ = 0,1, 1 e 10. Compare o erro de teste de cada uma.
+5. Volte à matriz com a coluna redundante (de AL1) e resolva a versão regularizada (XᵀX + λI)w = Xᵀy para λ = 0,1, 1 e 10. Compare o erro de teste de cada uma.
 
-**O que observar:** somar λI soma λ a todos os autovalores de XᵀX. Nenhum fica zero, então a matriz vira invertível; é a regressão Ridge.
+## O que observar
+
+somar λI soma λ a todos os autovalores de XᵀX. Nenhum fica zero, então a matriz vira invertível; é a regressão Ridge.
